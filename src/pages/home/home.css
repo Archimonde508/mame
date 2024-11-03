@@ -1,0 +1,88 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Bodoni+Moda&family=Cinzel&family=Satisfy&display=swap');
+
+
+.home {
+    background-image: url('/public/home.jpg');
+    background-size: cover;
+    background-position: center ; 
+    background-repeat: no-repeat; 
+
+    height: 100vh; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+
+    padding-left: 10%; 
+  }
+
+  .name-container {
+    text-align: left; 
+
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+
+    font-family: 'Playfair Display SC', sans-serif;
+    color: white; 
+    font-size: 2.3rem; 
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .info-container{
+    z-index: 20;
+    margin-bottom: 35%;
+    
+  }
+
+  .firstname-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .career-container{
+    font-family: 'Playfair Display', sans-serif;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    color: white; 
+    font-size: 1.25rem; 
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 1200px) {
+    .home {
+      background-position: center 10%;
+    }
+
+    .info-container{
+      margin-bottom: 20%;
+    }
+
+    .name-container{
+      font-size: 3rem; 
+    }
+
+    .career-container{
+      font-size: 1.5rem; 
+    }
+  }
+  
+  @media (min-width: 1500px) {
+    .home {
+      background-position: center 13%;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .home {
+      background-position: center 15%;
+    }
+  }
+
