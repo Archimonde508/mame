@@ -5,19 +5,22 @@ function Navbar() {
     return (
         <nav className='navbar'>
             <div>
-            <div className='navbar-content'>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/form">Form</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                </ul>
-            </div>
+                <div className='navbar-content'>
+                    <ul>
+                        <Link to="/" className="navbar-option">
+                            <li>Home</li>
+                        </Link>
+                        <Link to="/actress" className="navbar-option">
+                            <li>Aktorstwo</li>
+                        </Link>
+                        <Link to="/charisma" className="navbar-option">
+                            <li>Charisma</li>
+                        </Link>
+                        <Link to="/about" className="navbar-option">
+                            <li>About</li>
+                        </Link>
+                    </ul>
+                </div>
             </div>
         </nav>
     );

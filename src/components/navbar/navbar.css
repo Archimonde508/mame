@@ -1,19 +1,24 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(12, 12, 12, 0);
-    color: white;
-    padding: 1rem 2rem;
-    z-index: 1000; /* Ensures it stays on top */
-  }
-  
-  .navbar-content {
-    display: flex;
-    justify-content: flex-end;
-    /* align-items: ; */
-    /* max-width: 1200px; */
-    margin-right: 5%;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(12, 12, 12, 0);
+  color: white;
+  z-index: 1000;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.navbar-option {
+  width: 80px;
+  height: 50px;
+  background-color: rgba(24, 24, 24, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

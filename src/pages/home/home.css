@@ -5,9 +5,9 @@
 
 
 .home {
-    background-image: url('/public/home.jpg');
+    background-image: url('/home2.jpg');
     background-size: cover;
-    background-position: center ; 
+    background-position: 30% center ; 
     background-repeat: no-repeat; 
 
     height: 100vh; 
@@ -76,13 +76,13 @@
   
   @media (min-width: 1500px) {
     .home {
-      background-position: center 13%;
+      background-position: center 25%;
     }
   }
 
   @media (min-width: 1600px) {
     .home {
-      background-position: center 15%;
+      background-position: center 50%;
     }
   }
 

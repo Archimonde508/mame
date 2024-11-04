@@ -1,0 +1,51 @@
+.charisma-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 0 10%;
+}
+
+.charisma-header-bar{
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+
+    letter-spacing: 3px;
+    font-size: 35px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.99);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.charisma-content{
+    display: flex;
+    flex-direction: row;
+
+    gap: 15%;
+
+}
+
+.charisma-pic-container{
+    /* background-color: yellow; */
+}
+
+.charisma-image{
+    width: 40vh;
+    height: auto;  
+}
+
+.charisma-text-container{
+    padding-top: 30px;
+    letter-spacing: 1.4px;
+    text-align: justify;
+    /* background-color: orange; */
+    font-size: 20px;
+
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  */
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}

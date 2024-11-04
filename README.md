@@ -1,4 +1,3 @@
 # TODO
-1. Ucięty łeb
-2. Napis na środku
-3. Overaly - dostosować
+1. przeniesc maila na O mnie
+2. dodac fb i ig wieksze i bez napisu

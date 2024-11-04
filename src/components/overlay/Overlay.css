@@ -1,12 +1,12 @@
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.60); /* Overlay color */
-    opacity: 0.60; /* Overlay opacity */
-    pointer-events: none; /* Makes the overlay non-clickable */
-    transition: background 0.3s, border-radius 0.3s, opacity 0.3s; /* Smooth transitions */
-    z-index: 10;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.60);  
+  opacity: 0.60;
+  pointer-events: none;  /* Makes the overlay non-clickable */
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  z-index: 10;
+}
