@@ -3,9 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
-import Footer from './components/footer/Footer';
 import Charisma from './pages/charisma/Charisma';
-import Actress from './pages/actress/actress';
+import Actress from './pages/actress/Actress';
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/actress" element={<Actress />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
