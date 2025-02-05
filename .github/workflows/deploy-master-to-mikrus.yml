@@ -26,7 +26,7 @@ jobs:
 
       - name: Save SSH Private Key
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_MIKRUS_PRIVATE_KEY }}
         run: |
           echo "$SSH_PRIVATE_KEY" > deploy_key
           chmod 600 deploy_key
