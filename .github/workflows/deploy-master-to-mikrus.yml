@@ -1,0 +1,48 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Save SSH Private Key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          echo "$SSH_PRIVATE_KEY" > deploy_key
+          chmod 600 deploy_key
+
+      - name: Deploy files to the server
+        run: |
+          rsync -avz --delete -e "ssh -i deploy_key -o StrictHostKeyChecking=no" ./dist/ root@srv10.mikr.us:/var/www/my-app/
+
+      - name: Install dependencies on the server
+        run: |
+          ssh -i deploy_key -o StrictHostKeyChecking=no root@srv10.mikr.us "cd /var/www/my-app && npm install"
+
+      - name: Build the project on the server
+        run: |
+          ssh -i deploy_key -o StrictHostKeyChecking=no root@srv10.mikr.us "cd /var/www/my-app && npm run build"
+
+      - name: Move build results to server directory
+        run: |
+          ssh -i deploy_key -o StrictHostKeyChecking=no root@srv10.mikr.us "cp -r /var/www/my-app/dist/* /var/www/my-app/html/"
