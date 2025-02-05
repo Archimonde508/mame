@@ -33,7 +33,7 @@ jobs:
 
       - name: Deploy files to the server
         run: |
-          rsync -avz --delete -e "ssh -i deploy_key -o StrictHostKeyChecking=no -p 10232" ./dist/ root@srv10.mikr.us:/var/www/mame/
+          rsync -avz --delete -e "ssh -i deploy_key -o StrictHostKeyChecking=no -p 10232" --exclude 'node_modules' --exclude 'dist' . root@srv10.mikr.us:/var/www/mame/
 
       - name: Install dependencies on the server
         run: |
