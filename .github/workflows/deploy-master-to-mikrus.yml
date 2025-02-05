@@ -45,5 +45,5 @@ jobs:
 
       - name: Move build results to server directory
         run: |
-          ssh -i deploy_key -o StrictHostKeyChecking=no -p 10232 root@srv10.mikr.us "cp -r /var/www/mame/dist/* /var/www/mame/html/"
+          ssh -i deploy_key -o StrictHostKeyChecking=no -p 10232 root@srv10.mikr.us "cp -r /var/www/mame/dist/* /var/www/html/"
 
