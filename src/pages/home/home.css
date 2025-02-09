@@ -1,88 +1,114 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Bodoni+Moda&family=Cinzel&family=Satisfy&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=block");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lora&family=Bodoni+Moda&family=Cinzel&family=Satisfy&display=block");
 
 .home {
-    background-image: url('/home2.jpg');
-    background-size: cover;
-    background-position: 30% center ; 
-    background-repeat: no-repeat; 
+  position: relative;
+  background-color: black;  /* Black background before image loads */
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10%;
+  overflow: hidden;  /* Prevents image overflow during transition */
+}
 
-    height: 100vh; 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: 30% center;
+  background-image: url(""); /* No image initially */
+  opacity: 0;  /* Hidden initially */
+  transition: opacity 1s ease-in-out; /* Transition for fade-in effect */
+}
 
-    padding-left: 10%; 
+.home.loaded::before {
+  background-image: url("/home2.jpg"); /* Image when loaded */
+  opacity: 1;  /* Fade in image */
+}
+
+.name-container {
+  text-align: left;
+
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+
+  font-family: "Playfair Display SC", sans-serif;
+  font-display: block;
+  color: white;
+  font-size: 2.3rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.info-container {
+  z-index: 20;
+  margin-bottom: 35%;
+}
+
+.firstname-container {
+  display: flex;
+  justify-content: center;
+}
+
+.career-container {
+  font-family: "Playfair Display", sans-serif;
+  font-display: block;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (min-width: 1200px) {
+  .home {
+    background-position: center 10%;
+  }
+
+  .info-container {
+    margin-bottom: 20%;
   }
 
   .name-container {
-    text-align: left; 
-
-    border-bottom: 2px solid white;
-    padding-bottom: 0.5rem;
-
-    font-family: 'Playfair Display SC', sans-serif;
-    color: white; 
-    font-size: 2.3rem; 
-    letter-spacing: 3px;
-    font-weight: 600;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    font-size: 3rem;
   }
 
-  .info-container{
-    z-index: 20;
-    margin-bottom: 35%;
-    
+  .career-container {
+    font-size: 1.5rem;
   }
+}
 
-  .firstname-container{
-    display: flex;
-    justify-content: center;
+@media (min-width: 1500px) {
+  .home {
+    background-position: center 25%;
   }
+}
 
-  .career-container{
-    font-family: 'Playfair Display', sans-serif;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-    color: white; 
-    font-size: 1.25rem; 
-    letter-spacing: 1px;
-    font-weight: 600;
-    padding-top: 20px;
-
-    display: flex;
-    justify-content: flex-end;
+@media (min-width: 1600px) {
+  .home {
+    background-position: center 50%;
   }
-
-  @media (min-width: 1200px) {
-    .home {
-      background-position: center 10%;
-    }
-
-    .info-container{
-      margin-bottom: 20%;
-    }
-
-    .name-container{
-      font-size: 3rem; 
-    }
-
-    .career-container{
-      font-size: 1.5rem; 
-    }
-  }
-  
-  @media (min-width: 1500px) {
-    .home {
-      background-position: center 25%;
-    }
-  }
-
-  @media (min-width: 1600px) {
-    .home {
-      background-position: center 50%;
-    }
-  }
-
+}

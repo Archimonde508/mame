@@ -6,7 +6,7 @@ import About from './pages/about/About';
 import Charisma from './pages/charisma/Charisma';
 import Actress from './pages/actress/Actress';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Navbar />

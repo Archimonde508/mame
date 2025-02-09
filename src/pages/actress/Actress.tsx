@@ -1,7 +1,7 @@
 import './actress.css'
 
 
-function Actress() {
+const Actress = () => {
   return (
     <div className="video-container">
         <iframe className="actress-iframe"

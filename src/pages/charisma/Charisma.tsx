@@ -5,7 +5,7 @@ import { GalleryItem } from '../../types/GalleryItem';
 import ImageModal from './ImageModal';
 
 
-function Charisma() {
+const Charisma = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState<GalleryItem | null>(null);
 

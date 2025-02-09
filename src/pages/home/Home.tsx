@@ -1,9 +1,19 @@
-import Overlay from '../../components/overlay/Overlay';
-import './home.css'
+import { useState, useEffect } from "react";
+import Overlay from "../../components/overlay/Overlay";
+import "./home.css";
+// import { InlineStyles } from "../../types/CssStyles";
 
-function Home() {
+const Home = () => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = "/home2.jpg";
+    img.onload = () => setLoaded(true);
+  }, []);
+
   return (
-    <div className="home">
+    <div className={`home ${loaded ? "loaded" : ""}`}>
       <Overlay />
       <div className="info-container">
         <div className="name-container">
@@ -16,6 +26,19 @@ function Home() {
       </div>
     </div>
   );
-}
+};
 
 export default Home;
+
+// const styles: InlineStyles = {
+//   loadingScreen: {
+//     display: "flex",
+//     justifyContent: "center",
+//     alignItems: "center",
+//     height: "100vh",
+//     backgroundColor: "#000",
+//     color: "#fff",
+//     fontSize: "1.5rem",
+//     fontFamily: '"Playfair Display SC", serif',
+//   },
+// }

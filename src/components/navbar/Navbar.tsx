@@ -24,7 +24,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='contact-content'>
-                        <a href="https://instagram.com/your-account" target="_blank" rel="noopener noreferrer" className="contact-option">
+                        <a href="https://www.instagram.com/aktorka.modelka/" target="_blank" rel="noopener noreferrer" className="contact-option">
                             <FaInstagram size={50} />
                         </a>
                         <a href="https://www.facebook.com/malgorzata.horyn.olszewska" target="_blank" rel="noopener noreferrer" className="contact-option">
