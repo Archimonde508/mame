@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Overlay from "../../components/overlay/Overlay";
 import "./home.css";
 // import { InlineStyles } from "../../types/CssStyles";
 
@@ -14,7 +13,6 @@ const Home = () => {
 
   return (
     <div className={`home ${loaded ? "loaded" : ""}`}>
-      <Overlay />
       <div className="info-container">
         <div className="name-container">
           <div className="firstname-container">

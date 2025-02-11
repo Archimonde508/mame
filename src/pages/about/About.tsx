@@ -1,14 +1,12 @@
-import { InlineStyles } from "../../types/CssStyles";
+import { createStyles } from "../../theme/utils";
 
 const About = () => {
   return (
-    <div style={aboutStyles.container}>
-      <div style={aboutStyles.headerBar}>O mnie</div>
-      <div style={aboutStyles.content}>
-        <div>
-          <img src="/about.jpg" alt="About me" style={aboutStyles.image} />
-        </div>
-        <div style={aboutStyles.textContainer}>
+    <div css={aboutStyles.container}>
+      <div css={aboutStyles.headerBar}>O mnie</div>
+      <div css={aboutStyles.content}>
+        <img src="/about.jpg" alt="About me" css={aboutStyles.image} />
+        <div css={aboutStyles.textContainer}>
           Zanim zostałam fotomodelką, spróbowałem swoich sił w wodzie. 10 lat
           pływania zawodowego, praca jako ratownik wodny oraz instruktor
           pływania pozwoliły mi ukształtować charakter. Przez te lata
@@ -29,39 +27,47 @@ const About = () => {
 
 export default About;
 
-const aboutStyles: InlineStyles = {
+const aboutStyles = createStyles({
   container: {
-    marginTop: '90px',
+    // marginTop: "90px",
     display: "flex",
     flexDirection: "column",
     gap: "20px",
     padding: "0 10%",
   },
-  headerBar: {
-    borderBottom: "2px solid white",
+  headerBar: ({ colors, typography }) => ({
+    borderBottom: `2px solid ${colors.white}`,
     paddingBottom: "0.5rem",
     letterSpacing: "3px",
-    fontSize: "35px",
-    textShadow: "1px 1px 10px rgba(0, 0, 0, 0.99)",
-    fontWeight: 400,
-    color: "rgba(255, 255, 255, 0.95)",
+    fontSize: typography.fontSize.lg,
+    textShadow: `1px 1px 10px ${colors.black}`,
+    fontWeight: typography.fontWeight.normal,
+    color: colors.white,
     fontFamily: "'Times New Roman', Times, serif",
-  },
+  }),
   content: {
     display: "flex",
     flexDirection: "row",
-    gap: "15%",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: "5%",
+    width: "100%",
   },
-  image: {
-    width: "40vh",
+  image: ({ breakPoints }) => ({
+    flex: "0 0 35%",
+    maxWidth: "35%",
     height: "auto",
-  },
-  textContainer: {
+    [breakPoints.up("2xl")]: {
+      maxWidth: "30%",
+    },
+  }),
+  textContainer: ({ typography }) => ({
+    flex: "0 0 50%",
+    maxWidth: "50%",
     paddingTop: "30px",
     letterSpacing: "1.4px",
     textAlign: "justify",
-    fontSize: "20px",
+    fontSize: typography.fontSize.xs,
     fontFamily: "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif",
-  },
-};
-
+  }),
+});

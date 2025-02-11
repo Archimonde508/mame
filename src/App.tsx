@@ -1,10 +1,10 @@
-import './App.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
-import Home from './pages/home/Home';
-import About from './pages/about/About';
-import Charisma from './pages/charisma/Charisma';
-import Actress from './pages/actress/Actress';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Charisma from "./pages/charisma/Charisma";
+import Actress from "./pages/actress/Actress";
 
 const App = () => {
   return (
@@ -18,6 +18,6 @@ const App = () => {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
-export default App
+export default App;
