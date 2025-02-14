@@ -181,6 +181,8 @@ tak powinien wyglądać config
 10. ZMIEŃ PASY DO SERWERA
 11. FAVICON
 12. subdomena 
+13. ifframe tez niech ma jakiegos skeletona / loadera
+14. lazy loading dziala na tej galeri?
 
 Mama:
 5. Uzupełnij prawidłowym tekstem
