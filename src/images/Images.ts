@@ -2,35 +2,35 @@ import { GalleryImage } from "../types/Image";
 
 const charismaImages: GalleryImage[] = [
   {
-    src: "../gallery/1.JPG",
+    src: "/gallery/1.JPG",
     width: 524,
     height: 793,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "../../gallery/1.JPG",
+    src: "/gallery/2.JPG",
     width: 610,
     height: 920,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "/var/www/gallery/1.JPG",
+    src: "/gallery/3.PNG",
     width: 611,
     height: 920,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "src/gallery/1.JPG",
+    src: "/gallery/4.PNG",
     width: 615,
     height: 919,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "/gallery/1.JPG",
+    src: "/gallery/5.PNG",
     width: 602,
     height: 915,
     title: "aaaaa",

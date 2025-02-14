@@ -4,7 +4,7 @@
   3. How to Build
 3. How pipeline is working
 4. How to upload images 
-
+scp -P 10232 "C:\Users\Archimonde\Desktop\mama zdjeica\5.PNG" root@srv10.mikr.us:/var/www/gallery/
 
 
 Najważniejsze:
