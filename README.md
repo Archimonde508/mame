@@ -172,6 +172,7 @@ tak powinien wyglądać config
 
 
 Nginx restart nie działa 
+        root /var/www/error; tez nie zostal uwzgledniony
 5. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
 4. Skontyneryzować w dockerku
 
