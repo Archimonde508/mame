@@ -170,20 +170,18 @@ tak powinien wyglądać config
 - tsx ma nie być serwowany jako js, ma zwracać 403 (? czemu)
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
-0. Handle images locally 
   
-2. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
+1. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
+  No ale tu też jest problem bo to zdjęcie musi mieć loadera
+  2. lazy loading dziala na tej galeri? Chuj wie jak to zrobić
+3. Dodaj Wersje mobilne
+4. Skontyneryzować w dockerku
+5. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
+  6. Navbar? Tak się go robi?
 
-14. lazy loading dziala na tej galeri?
-4. Dodaj Wersje mobilne
-  
-6. Skontyneryzować w dockerku
-7. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
-  8. Navbar? Tak się go robi?
-
-10. ZMIEŃ PASY DO SERWERA
-11. FAVICON
-12. subdomena 
+7. ZMIEŃ PASY DO SERWERA
+8. FAVICON
+9. subdomena 
 
 
 Mama:
