@@ -170,13 +170,16 @@ tak powinien wyglądać config
 - tsx ma nie być serwowany jako js, ma zwracać 403 (? czemu)
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
-  
+
+Nginx restart nie działa 
+5. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
+4. Skontyneryzować w dockerku
+
+
 1. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
   No ale tu też jest problem bo to zdjęcie musi mieć loadera
   2. lazy loading dziala na tej galeri? Chuj wie jak to zrobić
 3. Dodaj Wersje mobilne
-4. Skontyneryzować w dockerku
-5. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
   6. Navbar? Tak się go robi?
 
 7. ZMIEŃ PASY DO SERWERA
