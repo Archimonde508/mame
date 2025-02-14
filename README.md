@@ -170,19 +170,23 @@ tak powinien wyglądać config
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
 
-  3. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
   
+  
+1. Nie działają zdjęcia
+3. wyjeb fote z about z public
+2. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
+13. ifframe tez niech ma jakiegos skeletona / loadera
+14. lazy loading dziala na tej galeri?
 4. Dodaj Wersje mobilne
   
 6. Skontyneryzować w dockerku
 7. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
   8. Navbar? Tak się go robi?
-9. wyjeb fote z about z public
+
 10. ZMIEŃ PASY DO SERWERA
 11. FAVICON
 12. subdomena 
-13. ifframe tez niech ma jakiegos skeletona / loadera
-14. lazy loading dziala na tej galeri?
+
 
 Mama:
 5. Uzupełnij prawidłowym tekstem
