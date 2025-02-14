@@ -178,6 +178,9 @@ tak powinien wyglądać config
 7. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
   8. Navbar? Tak się go robi?
 9. wyjeb fote z about z public
+10. ZMIEŃ PASY DO SERWERA
+11. FAVICON
+12. subdomena 
 
 Mama:
 5. Uzupełnij prawidłowym tekstem

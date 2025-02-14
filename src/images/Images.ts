@@ -2,21 +2,21 @@ import { GalleryImage } from "../types/Image";
 
 const charismaImages: GalleryImage[] = [
   {
-    src: "src/images/charisma/1.JPG",
+    src: "../gallery/1.JPG",
     width: 524,
     height: 793,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "src/images/charisma/2.PNG",
+    src: "../../gallery/1.JPG",
     width: 610,
     height: 920,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "src/images/charisma/3.PNG",
+    src: "/var/www/gallery/1.JPG",
     width: 611,
     height: 920,
     title: "aaaaa",
