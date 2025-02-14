@@ -51,12 +51,12 @@ const charismaStyles = createStyles({
     justifyContent: "space-between",
     height: "70vh",
   },
-  galleryContainer: () => ({
+  galleryContainer: ({colors}) => ({
     gridArea: "galleryContainer",
     height: "70vh",
     overflowY: "auto",
     scrollbarWidth: "auto",
-    scrollbarColor: "#444 #222",
-    backgroundColor: "#141414"
+    scrollbarColor: `${colors.scrollThumb} ${colors.scrollTrack}`,
+    backgroundColor: colors.darkBackground
   }),
 });

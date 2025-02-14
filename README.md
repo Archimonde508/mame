@@ -1,3 +1,12 @@
+1. General Documentation
+2. commands
+  2. How to run
+  3. How to Build
+3. How pipeline is working
+4. How to upload images 
+
+
+
 Najważniejsze:
 ssh -p 10232 root@srv10.mikr.us 
 skurwysyny 123 xJaHfEzZk7
@@ -47,7 +56,9 @@ systemctl restart nginx - aplikowanie zmian
 		
 ufw status - stan fierwalla
 
-nano /etc/nginx/sites-available/default - edycja nginx (PAMIĘTAJ BY ZAAPLIKOWAĆ ZMIANY)
+nano /etc/nginx/sites-available/default - edycja nginx (PAMIĘTAJ BY ZAAPLIKOWAĆ ZMIANY)\
+
+Jak wstawić plik
 
 --------------------------------------------------
 
@@ -159,31 +170,31 @@ tak powinien wyglądać config
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
 
-1. USUN WSZYSTKIE CSS!! UZYWAJ TYPOGRAPHY I KOLORw
-  - index.css
-  - background iamge nie pojawia sie plynniue
-  - pierdolone czcionki w dupe jebane nie pojawiaja sie płynnie bo nie i są chujowe i powinno sie je jebac w dupe
-1.5 Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara
+  3. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
+  
+4. Dodaj Wersje mobilne
+  
+6. Skontyneryzować w dockerku
+7. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
+  8. Navbar? Tak się go robi?
+9. wyjeb fote z about z public
+
+Mama:
+5. Uzupełnij prawidłowym tekstem
 2. Daj na głównej mniejsze zdjęcie
+3. Dodaj brakujące pliki i filmiki
+
   1. Miej te pliki w innym miejscu i za każdym razem po zbuildowaniu kopiuj disc
   2. Zautomatyzuj deploy z githuba
-3. Dodaj brakujące pliki i filmiki
-4. Dodaj Wersje mobilne
-5. Uzupełnij prawidłowym tekstem
     6. Dlaczego główna strona tak chujowo długo się ładuje?
     - Bo zdjęcie jest duże. Sugestia: Wstawić to do public
     - ewentualnie jeszcze do head tagu
     - Reszta zdjęc oczywiście idzie do src
     - A jak to za długo się ładuje to zrób tak, że masz najpierw blura / ciemne w tle
-6. Skontyneryzować w dockerku
   10. Na wąskich ekranach about wypierdala sie zbyt wysoko, container nie może być od góry tylko OD nav bara się zaczynać (idk czy to dobre miejsce)
     do aplikowania tego - moze daj navigation w container
-7. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
   12. jak kurwa działają te inline styles - defaultowe są chujowe bo nie działają
    te tagi before edc, dlatego użyjemy emotion/react, który już na to pozwoli
-8. Navbar?
-9. czy zdjecia wszystkie nalezy trzymac w src czy tylko zrodla do nich bo obciaza to git?
-
   1. Dlaczego trzeba dać emotion.d.ts???? -> to moduł który nadpisuje defaultowe theme
 
 
@@ -215,3 +226,5 @@ Okej, niezbędne będzie tysiąc helperów, żeby zaczęło to działać, ale
 da się to zrobić
 
 
+: używane do pseudoklas - hover, focus, active, nth-child
+:: pseudo-elements - cześć elementu - before, after, first-letter, first-line

@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import "./navbar.css";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { createStyles } from "../../theme/utils";
-import { keyframes } from "@emotion/react";
+import { fadeInKeyframes } from "../../theme/keyframes";
 
 const Navbar = () => {
   return (
@@ -10,7 +9,7 @@ const Navbar = () => {
       <div>
         <div css={navbarStyles.navbarContent}>
           <div className="navigation-content">
-            <ul>
+            <ul css={navbarStyles.navbarList}>
               <Link to="/" css={navbarStyles.navbarOption}>
                 <li>Home</li>
               </Link>
@@ -51,53 +50,55 @@ const Navbar = () => {
 
 export default Navbar;
 
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
 const navbarStyles = createStyles({
-  navbar: {
+  navbar: ({ colors }) => ({
     position: "fixed",
     top: 0,
     left: 0,
     width: "100%",
-    backgroundColor: "rgba(12, 12, 12, 0)",
-    color: "white",
+    color: colors.white,
     zIndex: 1000,
     opacity: 0,
-    animation: `${fadeIn} 0.5s ease-in forwards`,
+    animation: `${fadeInKeyframes} 0.5s ease-in forwards`,
+  }),
+  navbarList: {
+    listStyleType: "none",
+    display: "flex",
+    gap: "20px",
   },
   navbarContent: {
     display: "flex",
     justifyContent: "space-between",
     marginRight: "5%",
   },
-  navbarOption: {
+  navbarOption: ({ colors, typography: { fontWeight } }) => ({
     width: "80px",
     height: "50px",
-    backgroundColor: "rgba(24, 24, 24, 0.1)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-  },
+    color: colors.white,
+    textDecoration: "none",
+    fontWeight: fontWeight.medium,
+    "&:hover": {
+      color: colors.linkHover,
+    },
+  }),
   contactContent: {
     display: "flex",
     gap: "20px",
   },
-  contactOption: {
-    color: "white",
+  contactOption: ({ colors }) => ({
+    color: colors.white,
     textDecoration: "none",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     gap: "4px",
     padding: "20px 10px",
-    transition: "background-color 0.3s ease"
-  },
+    transition: "background-color 0.3s ease",
+    "&:hover": {
+      color: colors.linkHover,
+    },
+  }),
 });
-

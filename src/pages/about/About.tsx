@@ -29,7 +29,7 @@ export default About;
 
 const aboutStyles = createStyles({
   container: {
-    // marginTop: "90px",
+    marginTop: "90px",
     display: "flex",
     flexDirection: "column",
     gap: "20px",

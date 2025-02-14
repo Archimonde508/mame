@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import "./home.css";
 import { createStyles } from "../../theme/utils";
-import { keyframes } from "@emotion/react";
+import { fadeInKeyframes } from "../../theme/keyframes";
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
@@ -13,7 +12,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div css={loaded ? homeStyles.homeLoaded : homeStyles.home}>
+    <div
+      css={[
+        homeStyles.home,
+        loaded ? homeStyles.homeLoaded : homeStyles.homeInitial,
+      ]}
+    >
       <div css={homeStyles.infoContainer}>
         <div css={homeStyles.nameContainer}>
           <div css={homeStyles.firstnameContainer}>
@@ -29,19 +33,10 @@ const Home = () => {
 
 export default Home;
 
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
 const homeStyles = createStyles({
-  home: ({ breakPoints }) => ({
+  home: ({ breakPoints, colors }) => ({
     position: "relative",
-    backgroundColor: "black",
+    backgroundColor: colors.black,
     height: "100vh",
     display: "flex",
     justifyContent: "flex-start",
@@ -57,54 +52,49 @@ const homeStyles = createStyles({
       bottom: 0,
       backgroundSize: "cover",
       backgroundPosition: "30% center",
-      backgroundImage: "url('')", // No image initially
-      opacity: 0,
       transition: "opacity 1s ease-in-out",
     },
     backgroundPosition: "30% center",
+    [breakPoints.up("xl")]: {
+      backgroundPosition: "center 10%",
+    },
+    [breakPoints.up("2xl")]: {
+      backgroundPosition: "center 25%",
+    },
+    [breakPoints.up("3xl")]: {
+      backgroundPosition: "center 50%",
+    },
   }),
-  homeLoaded: ({ breakPoints }) => ({
-    position: "relative",
-    backgroundColor: "black",
-    height: "100vh",
-    display: "flex",
-    justifyContent: "flex-start",
-    alignItems: "center",
-    paddingLeft: "10%",
-    overflow: "hidden",
+  homeInitial: {
+    "&::before": {
+      backgroundImage: "url('')",
+      opacity: 0,
+    },
+  },
+  homeLoaded: {
     "&::before": {
       backgroundImage: "url('/home2.jpg')",
       opacity: 1,
-      content: '""',
-      position: "absolute",
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      backgroundSize: "cover",
-      backgroundPosition: "30% center",
-      transition: "opacity 1s ease-in-out",
     },
-    backgroundPosition: "30% center",
-  }),
-  nameContainer: ({ breakPoints }) => ({
-    "@font-face": {
-      fontFamily: "Lato-Regular",
-      src: 'url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=block") format("truetype")',
-    },
+  },
+  nameContainer: ({
+    breakPoints,
+    colors,
+    typography: { fontWeight, fontSize },
+  }) => ({
+    fontFamily: "'Playfair Display SC', sans-serif",
     textAlign: "left",
     borderBottom: "2px solid white",
     paddingBottom: "0.5rem",
-    fontFamily: "'Playfair Display SC', sans-serif",
-    color: "white",
-    fontSize: "2.3rem",
+    color: colors.white,
+    fontSize: fontSize.lg,
     letterSpacing: "3px",
-    fontWeight: 600,
+    fontWeight: fontWeight.bold,
     textShadow: "1px 1px 10px rgba(0, 0, 0, 0.3)",
     opacity: 0,
-    animation: `${fadeIn} 0.5s ease-in forwards`,
+    animation: `${fadeInKeyframes} 1s ease-in forwards`,
     [breakPoints.up("xl")]: {
-      fontSize: "3rem",
+      fontSize: fontSize.xl,
     },
   }),
   infoContainer: ({ breakPoints }) => ({
@@ -118,30 +108,19 @@ const homeStyles = createStyles({
     display: "flex",
     justifyContent: "center",
   },
-  careerContainer: ({ breakPoints }) => ({
-    // fontFamily: "'Playfair Display', sans-serif",
+  careerContainer: ({ breakPoints, colors, typography: { fontWeight, fontSize } }) => ({
+    fontFamily: "'Playfair Display', sans-serif",
     textShadow: "1px 1px 10px rgba(0, 0, 0, 0.3)",
-    color: "white",
-    fontSize: "1.25rem",
+    color: colors.white,
+    fontSize: fontSize.xs,
     letterSpacing: "1px",
-    fontWeight: 600,
+    fontWeight: fontWeight.bold,
     paddingTop: "20px",
     display: "flex",
     justifyContent: "flex-end",
+    animation: `${fadeInKeyframes} 1s ease-in forwards`,
     [breakPoints.up("xl")]: {
-      fontSize: "1.5rem",
+      fontSize: fontSize.sm,
     },
   }),
 });
-
-// home:
-
-// [breakPoints.up("xl")]: {
-//   backgroundPosition: "center 10%",
-// },
-// [breakPoints.up("2xl")]: {
-//   backgroundPosition: "center 25%",
-// },
-// [breakPoints.up("3xl")]: {
-//   backgroundPosition: "center 50%",
-// },
