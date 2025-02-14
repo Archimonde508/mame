@@ -47,9 +47,10 @@ jobs:
         run: |
           ssh -i deploy_key -o StrictHostKeyChecking=no -p 10232 root@srv10.mikr.us "cp -r /var/www/mame/dist/* /var/www/html/"
 
-      - name: Start Nginx with Custom Config
+      - name: Deploy Nginx Config
         run: |
-          ssh -i deploy_key -o StrictHostKeyChecking=no -p 10232 root@srv10.mikr.us "nginx -c /var/www/mame/nginx.conf"
+          scp -i deploy_key -P 10232 server/nginx/default root@srv10.mikr.us:/etc/nginx/sites-available/default
+          ssh -i deploy_key -o StrictHostKeyChecking=no -p 10232 root@srv10.mikr.us "ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default"
 
       - name: Restart Nginx
         run: |
