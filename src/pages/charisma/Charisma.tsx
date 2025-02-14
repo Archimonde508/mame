@@ -1,7 +1,7 @@
 import { createStyles } from "../../theme/utils";
 import YoutubePlayer from "../../components/youtube-player/YoutubePlayer";
 import ImageGallery from "../../components/image-gallery/ImageGallery";
-import { charismaImages } from "./../../images/Images"
+import { charismaImages } from "../../gallery/Images";
 
 const Charisma = () => {
   return (

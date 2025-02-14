@@ -1,17 +1,24 @@
+import { useState } from "react";
 import { createStyles } from "../../theme/utils";
+import YoutubeLoader from "./components/YoutubeLoader";
 
 type YoutubePlayerProps = {
   src: string;
 };
+
 const YoutubePlayer = ({ src }: YoutubePlayerProps) => {
+  const [loading, setLoading] = useState(true)
+   
   return (
     <div css={charismaStyles.videoContainer}>
+      {loading && <YoutubeLoader />}
       <iframe
         css={charismaStyles.iframe}
         src={src}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
+        onLoad={() => setLoading(true)}
       />
     </div>
   );

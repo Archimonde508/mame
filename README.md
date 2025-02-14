@@ -170,11 +170,10 @@ tak powinien wyglądać config
 - tsx ma nie być serwowany jako js, ma zwracać 403 (? czemu)
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
-
-  
+0. Handle images locally 
   
 2. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
-13. ifframe tez niech ma jakiegos skeletona / loadera
+
 14. lazy loading dziala na tej galeri?
 4. Dodaj Wersje mobilne
   

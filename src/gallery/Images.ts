@@ -1,5 +1,7 @@
 import { GalleryImage } from "../types/Image";
 
+// vi
+
 const charismaImages: GalleryImage[] = [
   {
     src: "/gallery/1.JPG",
