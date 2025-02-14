@@ -159,9 +159,12 @@ tak powinien wyglądać config
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
 
-0. Zrób galerię, żeby działała prawidłowo
-1. USUN WSZYSTKIE CSS!!
-1. Daj na głównej mniejsze zdjęcie
+1. USUN WSZYSTKIE CSS!! UZYWAJ TYPOGRAPHY I KOLORw
+  - index.css
+  - background iamge nie pojawia sie plynniue
+  - pierdolone czcionki w dupe jebane nie pojawiaja sie płynnie bo nie i są chujowe i powinno sie je jebac w dupe
+1.5 Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara
+2. Daj na głównej mniejsze zdjęcie
   1. Miej te pliki w innym miejscu i za każdym razem po zbuildowaniu kopiuj disc
   2. Zautomatyzuj deploy z githuba
 3. Dodaj brakujące pliki i filmiki
@@ -172,22 +175,16 @@ tak powinien wyglądać config
     - ewentualnie jeszcze do head tagu
     - Reszta zdjęc oczywiście idzie do src
     - A jak to za długo się ładuje to zrób tak, że masz najpierw blura / ciemne w tle
-7. Dlaczego pozostałe strony też niewłaściwie się ładują? 
-8. Skontyneryzować w dockerku
+6. Skontyneryzować w dockerku
   10. Na wąskich ekranach about wypierdala sie zbyt wysoko, container nie może być od góry tylko OD nav bara się zaczynać (idk czy to dobre miejsce)
     do aplikowania tego - moze daj navigation w container
-11. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
-12. jak kurwa działają te inline styles - defaultowe są chujowe bo nie działają
+7. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
+  12. jak kurwa działają te inline styles - defaultowe są chujowe bo nie działają
    te tagi before edc, dlatego użyjemy emotion/react, który już na to pozwoli
-13. Jak ma wyglądać About na węższych stronach
+8. Navbar?
+9. czy zdjecia wszystkie nalezy trzymac w src czy tylko zrodla do nich bo obciaza to git?
 
-2. podmień about, użyj kolorów ETC
-3. na aboucie zmień to na grida
-4. Zrób to samo na Home
-5. Zrób to samo dla pozostaych tak zeby usunąc wszystkie css
-6. czy zdjecia wszystkie nalezy trzymac w src czy tylko zrodla do nich bo obciaza to git?
-
-1. Dlaczego trzeba dać emotion.d.ts???? -> to moduł który nadpisuje defaultowe theme
+  1. Dlaczego trzeba dać emotion.d.ts???? -> to moduł który nadpisuje defaultowe theme
 
 
 Github pipeline

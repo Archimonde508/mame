@@ -1,4 +1,4 @@
-type BreakPointKey = "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
+type BreakPointKey = "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
 
 type BreakPointValue = Record<BreakPointKey, string>;
 
@@ -13,6 +13,7 @@ const values: BreakPointValue = {
   lg: "1024px",
   xl: "1280px",
   "2xl": "1440px",
+  "3xl": "1600px",
 };
 
 const createSingleRuleQuery = (

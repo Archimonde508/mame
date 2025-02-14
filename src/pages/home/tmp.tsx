@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./home.css";
 import { createStyles } from "../../theme/utils";
 import { keyframes } from "@emotion/react";
+// import { InlineStyles } from "../../types/CssStyles";
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
@@ -73,25 +74,12 @@ const homeStyles = createStyles({
     paddingLeft: "10%",
     overflow: "hidden",
     "&::before": {
-      backgroundImage: "url('/home2.jpg')",
+      backgroundImage: "url('/home3.jpg')",
       opacity: 1,
-      content: '""',
-      position: "absolute",
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      backgroundSize: "cover",
-      backgroundPosition: "30% center",
-      transition: "opacity 1s ease-in-out",
     },
     backgroundPosition: "30% center",
   }),
   nameContainer: ({ breakPoints }) => ({
-    "@font-face": {
-      fontFamily: "Lato-Regular",
-      src: 'url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=block") format("truetype")',
-    },
     textAlign: "left",
     borderBottom: "2px solid white",
     paddingBottom: "0.5rem",
@@ -119,7 +107,7 @@ const homeStyles = createStyles({
     justifyContent: "center",
   },
   careerContainer: ({ breakPoints }) => ({
-    // fontFamily: "'Playfair Display', sans-serif",
+    fontFamily: "'Playfair Display', sans-serif",
     textShadow: "1px 1px 10px rgba(0, 0, 0, 0.3)",
     color: "white",
     fontSize: "1.25rem",
