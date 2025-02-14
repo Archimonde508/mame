@@ -9,7 +9,7 @@ const charismaImages: GalleryImage[] = [
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "/gallery/2.JPG",
+    src: "/gallery/2.PNG",
     width: 610,
     height: 920,
     title: "aaaaa",

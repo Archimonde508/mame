@@ -4,7 +4,8 @@
   3. How to Build
 3. How pipeline is working
 4. How to upload images 
-scp -P 10232 "C:\Users\Archimonde\Desktop\mama zdjeica\5.PNG" root@srv10.mikr.us:/var/www/gallery/
+scp -P 10232 "C:\Users\Archimonde\Desktop\mama zdjeica\5.PNG" "C:\Users\Archimonde\Desktop\mama zdjeica\6.PNG" root@srv10.mikr.us:/var/www/gallery/
+
 
 
 Najważniejsze:
@@ -172,8 +173,6 @@ tak powinien wyglądać config
 
   
   
-1. Nie działają zdjęcia
-3. wyjeb fote z about z public
 2. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
 13. ifframe tez niech ma jakiegos skeletona / loadera
 14. lazy loading dziala na tej galeri?
