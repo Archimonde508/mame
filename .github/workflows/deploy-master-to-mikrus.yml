@@ -49,7 +49,7 @@ jobs:
 
       - name: Deploy Nginx Config
         run: |
-          scp -i deploy_key -P 10232 server/nginx/default root@srv10.mikr.us:/etc/nginx/sites-available/default
+          scp -i deploy_key -P 10232 nginx.conf root@srv10.mikr.us:/etc/nginx/sites-available/default
           ssh -i deploy_key -o StrictHostKeyChecking=no -p 10232 root@srv10.mikr.us "ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default"
 
       - name: Restart Nginx
