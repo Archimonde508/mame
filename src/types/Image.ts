@@ -3,11 +3,11 @@ export interface GalleryImage extends LightBoxImage {
     height: number;
 }
 
-export interface LightBoxImage extends Image {
+export interface LightBoxImage extends ImageBase {
     description: string;
     title: string
 }
 
-export interface Image {
+export interface ImageBase {
     src: string;
 }

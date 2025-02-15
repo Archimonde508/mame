@@ -1,9 +1,10 @@
-import { GalleryImage, Image } from "../types/Image";
+import { GalleryImage, ImageBase } from "../types/Image";
 
-const isVite = import.meta.env.MODE !== undefined;
+const isVite = import.meta.env.VITE_RUNNING_ON_VITE === 'true';
+console.log(isVite)
 const baseUrl = `${isVite ? '/src' : ''}/gallery/`
 
-const aboutImage: Image = {
+const aboutImage: ImageBase = {
   src: `${baseUrl}about.JPG`,
 }
 
