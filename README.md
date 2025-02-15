@@ -236,3 +236,6 @@ da się to zrobić
 
 : używane do pseudoklas - hover, focus, active, nth-child
 :: pseudo-elements - cześć elementu - before, after, first-letter, first-line
+
+
+W NOTATKACH CAŁEGO PIPELINE PRZEPISZ KROK PO KROKU

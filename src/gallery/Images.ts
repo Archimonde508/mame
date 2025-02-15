@@ -1,7 +1,6 @@
 import { GalleryImage, ImageBase } from "../types/Image";
 
-const isPrd = import.meta.env.VITE_IS_PRD === 'false';
-console.log(isPrd)
+const isPrd = import.meta.env.VITE_IS_PRD === 'true';
 const baseUrl = `${isPrd ? '' : '/src'}/gallery/`
 
 const aboutImage: ImageBase = {
