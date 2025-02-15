@@ -172,9 +172,7 @@ tak powinien wyglądać config
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
 
-Nginx restart nie działa 
-        root /var/www/error; tez nie zostal uwzgledniony
-5. Config nginxa też powinien być w repo? moze dlatego trzeba to kontynerozować? 
+2. jak zrobić czytanie prawidłowe zmiennych srodowiskowych?
 4. Skontyneryzować w dockerku
 
 
