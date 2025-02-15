@@ -1,10 +1,13 @@
-export interface GalleryImage extends ImageBase {
+export interface GalleryImage extends LightBoxImage {
     width: number;
     height: number;
 }
 
-export interface ImageBase {
-    src: string;
+export interface LightBoxImage extends Image {
     description: string;
     title: string
+}
+
+export interface Image {
+    src: string;
 }

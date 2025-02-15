@@ -1,3 +1,4 @@
+import { aboutImage } from "../../gallery/Images";
 import { createStyles } from "../../theme/utils";
 
 const About = () => {
@@ -5,7 +6,7 @@ const About = () => {
     <div css={aboutStyles.container}>
       <div css={aboutStyles.headerBar}>O mnie</div>
       <div css={aboutStyles.content}>
-        <img src="/gallery/about.jpg" alt="About me" css={aboutStyles.image} />
+        <img src={aboutImage.src} alt="About me" css={aboutStyles.image} />
         <div css={aboutStyles.textContainer}>
           Zanim zostałam fotomodelką, spróbowałem swoich sił w wodzie. 10 lat
           pływania zawodowego, praca jako ratownik wodny oraz instruktor

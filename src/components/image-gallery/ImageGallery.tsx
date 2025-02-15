@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { Gallery } from "react-grid-gallery";
-import { GalleryImage, ImageBase } from "./../../types/Image";
+import { GalleryImage, LightBoxImage } from "./../../types/Image";
 import Lightbox from "yet-another-react-lightbox";
 import {
   Captions,
@@ -23,7 +23,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
     setSelectedImageIndex(index);
   };
 
-  const lightboxImages: ImageBase[] = useMemo(
+  const lightboxImages: LightBoxImage[] = useMemo(
     () =>
       images.map((image) => ({
         src: image.src,

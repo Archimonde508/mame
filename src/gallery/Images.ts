@@ -1,36 +1,43 @@
-import { GalleryImage } from "../types/Image";
+import { GalleryImage, Image } from "../types/Image";
+
+const isVite = import.meta.env.MODE !== undefined;
+const baseUrl = `${isVite ? '/src' : ''}/gallery/`
+
+const aboutImage: Image = {
+  src: `${baseUrl}about.JPG`,
+}
 
 const charismaImages: GalleryImage[] = [
   {
-    src: "/gallery/1.JPG",
+    src: `${baseUrl}1.JPG`,
     width: 524,
     height: 793,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "/gallery/2.PNG",
+    src: `${baseUrl}2.PNG`,
     width: 610,
     height: 920,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "/gallery/3.PNG",
+    src: `${baseUrl}3.PNG`,
     width: 611,
     height: 920,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "/gallery/4.PNG",
+    src: `${baseUrl}4.PNG`,
     width: 615,
     height: 919,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: "/gallery/5.PNG",
+    src: `${baseUrl}5.PNG`,
     width: 602,
     height: 915,
     title: "aaaaa",
@@ -495,4 +502,4 @@ const charismaImages: GalleryImage[] = [
   
 ];
 
-export { charismaImages };
+export { charismaImages, aboutImage };
