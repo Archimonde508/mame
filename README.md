@@ -173,13 +173,12 @@ tak powinien wyglądać config
 
 
 1. Skontyneryzować w dockerku
-2. Dalej nie działa ta zmienna środowiskowa
 
 3. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
   3.1 No ale tu też jest problem bo to zdjęcie musi mieć loadera
   3.2 lazy loading dziala na tej galeri? Chuj wie jak to zrobić
 4. dodaj Pozostałe strony
-  4.1 Arabski
+  4.1 Orient - wymiary stron
   4.2 Aktorstwo
 5. Pokaż mamie jak się to wypełnia
 6. Dodaj Wersje mobilne
@@ -187,7 +186,8 @@ tak powinien wyglądać config
   6. Navbar? Tak się go robi?
 8. FAVICON
 9. subdomena (to się tak w ogóle nazywa)
-
+10. dwa rózne jezyki
+11. Przetestuj wydajność
 
 Mama:
 5. Uzupełnij prawidłowym tekstem

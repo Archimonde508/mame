@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     const img = new Image();
-    img.src = "/home2.jpg";
+    img.src = "/home.jpg";
     img.onload = () => setLoaded(true);
   }, []);
 
@@ -73,7 +73,7 @@ const homeStyles = createStyles({
   },
   homeLoaded: {
     "&::before": {
-      backgroundImage: "url('/home2.jpg')",
+      backgroundImage: "url('/home.jpg')",
       opacity: 1,
     },
   },

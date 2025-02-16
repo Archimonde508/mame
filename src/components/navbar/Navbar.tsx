@@ -16,6 +16,9 @@ const Navbar = () => {
               <Link to="/actress" css={navbarStyles.navbarOption}>
                 <li>Aktorstwo</li>
               </Link>
+              <Link to="/arabian" css={navbarStyles.navbarOption}>
+                <li>Orientalna Inspiracja</li>
+              </Link>
               <Link to="/charisma" css={navbarStyles.navbarOption}>
                 <li>Charisma</li>
               </Link>
