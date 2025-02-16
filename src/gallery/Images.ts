@@ -3,6 +3,8 @@ import { GalleryImage, ImageBase } from "../types/Image";
 const isPrd = import.meta.env.VITE_IS_PRD === 'true';
 const baseUrl = `${isPrd ? '' : '/src'}/gallery/`
 
+console.log(isPrd)
+
 const aboutImage: ImageBase = {
   src: `${baseUrl}about.JPG`,
 }

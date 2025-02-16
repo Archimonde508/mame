@@ -172,19 +172,21 @@ tak powinien wyglądać config
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
 
-2. jak zrobić czytanie prawidłowe zmiennych srodowiskowych?
-4. Skontyneryzować w dockerku
+1. Skontyneryzować w dockerku
+2. Dalej nie działa ta zmienna środowiskowa
 
-
-1. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
-  No ale tu też jest problem bo to zdjęcie musi mieć loadera
-  2. lazy loading dziala na tej galeri? Chuj wie jak to zrobić
-3. Dodaj Wersje mobilne
-  6. Navbar? Tak się go robi?
-
+3. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
+  3.1 No ale tu też jest problem bo to zdjęcie musi mieć loadera
+  3.2 lazy loading dziala na tej galeri? Chuj wie jak to zrobić
+4. dodaj Pozostałe strony
+  4.1 Arabski
+  4.2 Aktorstwo
+5. Pokaż mamie jak się to wypełnia
+6. Dodaj Wersje mobilne
 7. ZMIEŃ PASY DO SERWERA
+  6. Navbar? Tak się go robi?
 8. FAVICON
-9. subdomena 
+9. subdomena (to się tak w ogóle nazywa)
 
 
 Mama:
