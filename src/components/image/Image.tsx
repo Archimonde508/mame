@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Styles } from "../../theme/utils";
 
 type ImageProps = {
@@ -7,7 +6,7 @@ type ImageProps = {
     alt: string
 }
 const Image = ({ alt, src, styles }: ImageProps) => {
-    const [loaded, setLoaded] = useState(false);
+    // const [loaded, setLoaded] = useState(false);
 
     return (
         <img src={src} alt={alt} css={styles} />

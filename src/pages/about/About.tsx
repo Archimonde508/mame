@@ -1,6 +1,5 @@
 import { aboutImage } from "../../gallery/Images";
 import { createStyles } from "../../theme/utils";
-import Image from "../../components/image/Image"
 
 const About = () => {
   return (
