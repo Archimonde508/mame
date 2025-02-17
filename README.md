@@ -172,22 +172,23 @@ tak powinien wyglądać config
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
 
-1. Skontyneryzować w dockerku
-
-3. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
-  3.1 No ale tu też jest problem bo to zdjęcie musi mieć loadera
-  3.2 lazy loading dziala na tej galeri? Chuj wie jak to zrobić
-4. dodaj Pozostałe strony
+1. Skontyneryzować w dockerku (1h)
+2. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
+  3.1 No ale tu też jest problem bo to zdjęcie musi mieć loadera!!! (20min)
+4. dodaj Pozostałe strony (5 min)
   4.1 Orient - wymiary stron
   4.2 Aktorstwo
-5. Pokaż mamie jak się to wypełnia
-6. Dodaj Wersje mobilne
-7. ZMIEŃ PASY DO SERWERA
+  5. Pokaż mamie jak się to wypełnia
+5 Dodaj NOT FOUND (10 min -> redirect na home)
+6 DODAJ DWIE WERSJE JEZYKOWE (30 minut)
+7. Dodaj Wersje mobilne (dlugo)
+8. ZMIEŃ PASY DO SERWERA
   6. Navbar? Tak się go robi?
-8. FAVICON
-9. subdomena (to się tak w ogóle nazywa)
-10. dwa rózne jezyki
+9. FAVICON
+10. subdomena (to się tak w ogóle nazywa)
 11. Przetestuj wydajność
+  wejście na urode orientalną blokuje stronę
+    3.2 lazy loading dziala na tej galeri? Chuj wie jak to zrobić
 
 Mama:
 5. Uzupełnij prawidłowym tekstem
