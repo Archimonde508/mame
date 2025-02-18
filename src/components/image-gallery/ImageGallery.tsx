@@ -8,6 +8,7 @@ import {
   Fullscreen,
   Thumbnails,
   Download,
+  Zoom,
 } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
@@ -47,8 +48,13 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
         close={() => setSelectedImageIndex(-1)}
         slides={lightboxImages}
         index={selectedImageIndex}
-        plugins={[Captions, Download, Fullscreen, Counter, Thumbnails]}
+        plugins={[Captions, Download, Fullscreen, Counter, Thumbnails, Zoom]}
         captions={{ showToggle: false, descriptionTextAlign: "center" }}
+        zoom={{
+          scrollToZoom: true,
+          maxZoomPixelRatio: 3,
+          zoomInMultiplier: 0.01,
+        }}
       />
     </>
   );

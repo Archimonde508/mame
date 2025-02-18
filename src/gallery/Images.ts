@@ -6,7 +6,6 @@ const arabianUrl = `${baseUrl}/arabian/`
 const orientalUrl = `${baseUrl}/orient/`
 const aboutUrl = `${baseUrl}/about/`
 
-console.log(isPrd)
 
 const aboutImage: ImageBase = {
   src: `${aboutUrl}about.JPG`,
