@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { createStyles } from "../../theme/utils";
 import { fadeInKeyframes } from "../../theme/keyframes";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const img = new Image();
@@ -25,7 +27,7 @@ const Home = () => {
           </div>
           <div className="surname-container">Horyń-Olszewska </div>
         </div>
-        <div css={homeStyles.careerContainer}>Aktorka / Modelka dojrzała</div>
+        <div css={homeStyles.careerContainer}>{t("homeDescription")}</div>
       </div>
     </div>
   );

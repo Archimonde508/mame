@@ -26,13 +26,13 @@ const arabianImages: GalleryImage[] = [
     title: "1 Moevir Magazine October Issue 202320.jpg",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
-  {
-    src: `${arabianUrl}ART_2742 kopia.jpg`,
-    width: 524,
-    height: 793,
-    title: "ART_2742 kopia.jpg",
-    description: "After Rain (Jeshu John - designerspics.com)",
-  },
+  // {
+  //   src: `${arabianUrl}ART_2742 kopia.jpg`,
+  //   width: 524,
+  //   height: 793,
+  //   title: "ART_2742 kopia.jpg",
+  //   description: "After Rain (Jeshu John - designerspics.com)",
+  // },
   {
     src: `${arabianUrl}Malgorzata Horyn-Olszewska 50 lat .JPG`,
     width: 524,
@@ -61,13 +61,13 @@ const arabianImages: GalleryImage[] = [
     title: "Malgorzata Horyn-Olszewska w hidzabie.jpg",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
-  {
-    src: `${arabianUrl}Malgorzata Horyn-Olszewska. .jpg`,
-    width: 524,
-    height: 793,
-    title: "Malgorzata Horyn-Olszewska. .jpg",
-    description: "After Rain (Jeshu John - designerspics.com)",
-  },
+  // {
+  //   src: `${arabianUrl}Malgorzata Horyn-Olszewska. .jpg`,
+  //   width: 524,
+  //   height: 793,
+  //   title: "Malgorzata Horyn-Olszewska. .jpg",
+  //   description: "After Rain (Jeshu John - designerspics.com)",
+  // },
   {
     src: `${arabianUrl}Malgorzata Horyn-Olszewska.png`,
     width: 524,

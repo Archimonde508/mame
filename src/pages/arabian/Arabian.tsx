@@ -2,11 +2,13 @@ import { createStyles } from "../../theme/utils";
 import YoutubePlayer from "../../components/youtube-player/YoutubePlayer";
 import ImageGallery from "../../components/image-gallery/ImageGallery";
 import { arabianImages } from "../../gallery/Images";
+import { useTypedTranslation } from "../../hooks/useTypedTranslation/useTypedTranslation";
 
 const Arabian = () => {
+  const { t } = useTypedTranslation()
   return (
     <div css={arabianStyles.container}>
-      <div css={arabianStyles.headerBar}>Uroda Orientalna</div>
+      <div css={arabianStyles.headerBar}>{t("orientPageName")}</div>
       <div css={arabianStyles.content}>
         <div css={arabianStyles.videosContainer}>
           <YoutubePlayer src={"https://www.youtube.com/embed/qon4GfrfwFM"} />

@@ -2,8 +2,17 @@ import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { createStyles } from "../../theme/utils";
 import { fadeInKeyframes } from "../../theme/keyframes";
+import { languages } from "../../constants/languages";
+import { useTypedTranslation } from "../../hooks/useTypedTranslation/useTypedTranslation";
 
 const Navbar = () => {
+  const { i18n, t } = useTypedTranslation()
+
+  const onLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const langCode = e.target.value
+    i18n.changeLanguage(langCode)
+  }
+
   return (
     <nav css={navbarStyles.navbar}>
       <div>
@@ -11,19 +20,19 @@ const Navbar = () => {
           <div className="navigation-content">
             <ul css={navbarStyles.navbarList}>
               <Link to="/" css={navbarStyles.navbarOption}>
-                <li>Home</li>
+                <li>{t("homePageName")}</li>
               </Link>
-              <Link to="/actress" css={navbarStyles.navbarOption}>
-                <li>Aktorstwo</li>
+              <Link to="/acting" css={navbarStyles.navbarOption}>
+                <li>{t("actingPageName")}</li>
               </Link>
               <Link to="/arabian" css={navbarStyles.navbarOption}>
-                <li>Orientalna Inspiracja</li>
+                <li>{t("orientPageName")}</li>
               </Link>
               <Link to="/charisma" css={navbarStyles.navbarOption}>
-                <li>Charisma</li>
+                <li>{t("modelPageName")}</li>
               </Link>
               <Link to="/about" css={navbarStyles.navbarOption}>
-                <li>About</li>
+                <li>{t("aboutPageName")}</li>
               </Link>
             </ul>
           </div>
@@ -44,6 +53,13 @@ const Navbar = () => {
             >
               <FaFacebook size={50} />
             </a>
+            <select defaultValue={i18n.language} onChange={onLanguageChange}>
+              {languages.map(({ code, label }) => (
+                <option key={code} value={code}>
+                  {label}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
       </div>

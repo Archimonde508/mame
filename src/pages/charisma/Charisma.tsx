@@ -2,11 +2,13 @@ import { createStyles } from "../../theme/utils";
 import YoutubePlayer from "../../components/youtube-player/YoutubePlayer";
 import ImageGallery from "../../components/image-gallery/ImageGallery";
 import { charismaImages } from "../../gallery/Images";
+import { useTypedTranslation } from "../../hooks/useTypedTranslation/useTypedTranslation";
 
 const Charisma = () => {
+  const { t } = useTypedTranslation()
   return (
     <div css={charismaStyles.container}>
-      <div css={charismaStyles.headerBar}>Uroda Orientalna</div>
+      <div css={charismaStyles.headerBar}>{t("modelPageName")}</div>
       <div css={charismaStyles.content}>
         <div css={charismaStyles.videosContainer}>
           <YoutubePlayer src={"https://www.youtube.com/embed/dlwrdQscU6M"} />

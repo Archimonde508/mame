@@ -1,10 +1,13 @@
 import { aboutImage } from "../../gallery/Images";
+import { useTypedTranslation } from "../../hooks/useTypedTranslation/useTypedTranslation";
 import { createStyles } from "../../theme/utils";
 
 const About = () => {
+  const { t } = useTypedTranslation()
+
   return (
     <div css={aboutStyles.container}>
-      <div css={aboutStyles.headerBar}>O mnie</div>
+      <div css={aboutStyles.headerBar}>{t("aboutPageName")}</div>
       <div css={aboutStyles.content}>
         <img src={aboutImage.src} alt="About me" css={aboutStyles.image} />
         {/* <Image src={aboutImage.src} alt="About Me" styles={aboutStyles.image} /> */}

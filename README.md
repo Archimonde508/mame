@@ -172,7 +172,13 @@ tak powinien wyglądać config
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
 
-1. Skontyneryzować w dockerku (1h)
+1. Na waskiej wersji (lapek PC to chujowo wyglada):
+  1. Home
+  2. Aktorstwo
+  3. Orientalna
+  4. Charisma
+  5. About
+2. U mamy style w ogole nie działają ?
 2. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
   3.1 No ale tu też jest problem bo to zdjęcie musi mieć loadera!!! (20min)
 4. dodaj Pozostałe strony (5 min)
@@ -180,8 +186,12 @@ tak powinien wyglądać config
   4.2 Aktorstwo
   5. Pokaż mamie jak się to wypełnia
 5 Dodaj NOT FOUND (10 min -> redirect na home)
-6 DODAJ DWIE WERSJE JEZYKOWE (30 minut)
+6 DODAJ DWIE WERSJE JEZYKOWE (5 minut) - about
+7. popraw selecta w jezyku
+
+
 7. Dodaj Wersje mobilne (dlugo)
+
 8. ZMIEŃ PASY DO SERWERA
   6. Navbar? Tak się go robi?
 9. FAVICON
@@ -189,6 +199,7 @@ tak powinien wyglądać config
 11. Przetestuj wydajność
   wejście na urode orientalną blokuje stronę
     3.2 lazy loading dziala na tej galeri? Chuj wie jak to zrobić
+1. Skontyneryzować w dockerku (1h)
 
 Mama:
 5. Uzupełnij prawidłowym tekstem
