@@ -12,17 +12,9 @@ const About = () => {
         <img src={aboutImage.src} alt="About me" css={aboutStyles.image} />
         {/* <Image src={aboutImage.src} alt="About Me" styles={aboutStyles.image} /> */}
         <div css={aboutStyles.textContainer}>
-          Zanim zostałam fotomodelką, spróbowałem swoich sił w wodzie. 10 lat
-          pływania zawodowego, praca jako ratownik wodny oraz instruktor
-          pływania pozwoliły mi ukształtować charakter. Przez te lata
-          zaszczepiła się we mnie sumienność, wytrwałość i punktualność co
-          pozwala mi profesjonalnie podchodzić do każdej sesji zdjęciowej,
-          pokazu mody, gry w teledyskach, reklamach czy też serialach oraz
-          filmach. Fotomodeling łączę ze służbą w Państwowej Straży Pożarnej.
-          „Drodzy Państwo, nazywam się Szymon Chrobok i z przyjemnością wezmę
-          udział w Waszej reklamie.” Zapraszam do współpracy.
+          {t("aboutText")}
           <p>
-            <strong>Kontakt email: malgorzata.horyn-olszewska@wp.pl</strong>
+            {t("contactText")}
           </p>
         </div>
       </div>

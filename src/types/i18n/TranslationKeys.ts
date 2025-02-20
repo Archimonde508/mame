@@ -5,5 +5,6 @@ export type TranslationKeys = {
     orientPageName: string,
     modelPageName: string,
     aboutPageName: string,
-    aboutText: string
+    aboutText: string,
+    contactText: string
 }

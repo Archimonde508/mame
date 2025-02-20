@@ -171,7 +171,7 @@ tak powinien wyglądać config
 - tsx ma nie być serwowany jako js, ma zwracać 403 (? czemu)
 - usuń ten header - add_header Content-Type application/javascript; - bo wtedy nawet html bedzie interpretowany jako js
 
-
+0. CZEMU TO NIE DZIALA U MAMY?
 1. Na waskiej wersji (lapek PC to chujowo wyglada):
   1. Home
   2. Aktorstwo
@@ -179,15 +179,16 @@ tak powinien wyglądać config
   4. Charisma
   5. About
 2. U mamy style w ogole nie działają ?
+
 2. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
   3.1 No ale tu też jest problem bo to zdjęcie musi mieć loadera!!! (20min)
 4. dodaj Pozostałe strony (5 min)
   4.1 Orient - wymiary stron
   4.2 Aktorstwo
   5. Pokaż mamie jak się to wypełnia
-5 Dodaj NOT FOUND (10 min -> redirect na home)
+
 6 DODAJ DWIE WERSJE JEZYKOWE (5 minut) - about
-7. popraw selecta w jezyku
+7. popraw selecta w jezyku - wykorzystaj istniejacy
 
 
 7. Dodaj Wersje mobilne (dlugo)
