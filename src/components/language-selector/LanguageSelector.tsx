@@ -48,10 +48,9 @@ const languageSelectorStyles = createStyles({
     alignItems: "center",
     justifyContent: "space-between",
     width: "60px",
-    backgroundColor: colors.darkBackground,
     borderRadius: "5px",
     cursor: "pointer",
-    transition: "background-color 0.3s ease",
+    transition: "background-color 0.2s ease",
     padding: "0 10px 0 10px",
     "&:hover": {
       backgroundColor: colors.linkHover,

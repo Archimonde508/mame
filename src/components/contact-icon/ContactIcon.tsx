@@ -30,7 +30,7 @@ const contactIconStyles = createStyles({
     alignItems: "center",
     gap: "4px",
     padding: "0 10px",
-    transition: "background-color 0.3s ease",
+    transition: "color 0.2s ease",
     "&:hover": {
       color: colors.linkHover,
     },

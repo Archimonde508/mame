@@ -78,7 +78,9 @@ const navbarStyles = createStyles({
     justifyContent: "center",
     color: colors.white,
     textDecoration: "none",
+    textAlign: 'center',
     fontWeight: fontWeight.medium,
+    transition: "color 0.2s ease",
     "&:hover": {
       color: colors.linkHover,
     },
