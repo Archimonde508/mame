@@ -1,65 +1,45 @@
-import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { createStyles } from "../../theme/utils";
 import { fadeInKeyframes } from "../../theme/keyframes";
-import { languages } from "../../constants/languages";
 import { useTypedTranslation } from "../../hooks/useTypedTranslation/useTypedTranslation";
+import { Link } from "react-router-dom";
+import ContactIcon from "../contact-icon/ContactIcon";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import LanguageSelector from "../language-selector/LanguageSelector";
 
 const Navbar = () => {
-  const { i18n, t } = useTypedTranslation()
-
-  const onLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const langCode = e.target.value
-    i18n.changeLanguage(langCode)
-  }
+  const { t } = useTypedTranslation();
 
   return (
     <nav css={navbarStyles.navbar}>
       <div>
         <div css={navbarStyles.navbarContent}>
-          <div className="navigation-content">
-            <ul css={navbarStyles.navbarList}>
-              <Link to="/" css={navbarStyles.navbarOption}>
-                <li>{t("homePageName")}</li>
-              </Link>
-              <Link to="/acting" css={navbarStyles.navbarOption}>
-                <li>{t("actingPageName")}</li>
-              </Link>
-              <Link to="/arabian" css={navbarStyles.navbarOption}>
-                <li>{t("orientPageName")}</li>
-              </Link>
-              <Link to="/charisma" css={navbarStyles.navbarOption}>
-                <li>{t("modelPageName")}</li>
-              </Link>
-              <Link to="/about" css={navbarStyles.navbarOption}>
-                <li>{t("aboutPageName")}</li>
-              </Link>
-            </ul>
-          </div>
-          <div css={navbarStyles.contactContent}>
-            <a
+          <ul css={navbarStyles.navbarList}>
+            <Link to="/" css={navbarStyles.navbarOption}>
+              <li>{t("homePageName")}</li>
+            </Link>
+            <Link to="/acting" css={navbarStyles.navbarOption}>
+              <li>{t("actingPageName")}</li>
+            </Link>
+            <Link to="/arabian" css={navbarStyles.navbarOption}>
+              <li>{t("orientPageName")}</li>
+            </Link>
+            <Link to="/charisma" css={navbarStyles.navbarOption}>
+              <li>{t("modelPageName")}</li>
+            </Link>
+            <Link to="/about" css={navbarStyles.navbarOption}>
+              <li>{t("aboutPageName")}</li>
+            </Link>
+          </ul>
+          <div css={navbarStyles.contactAndLanguageContainer}>
+            <ContactIcon
               href="https://www.instagram.com/aktorka.modelka/"
-              target="_blank"
-              rel="noopener noreferrer"
-              css={navbarStyles.contactOption}
-            >
-              <FaInstagram size={50} />
-            </a>
-            <a
+              icon={FaInstagram}
+            />
+            <ContactIcon
               href="https://www.facebook.com/malgorzata.horyn.olszewska"
-              target="_blank"
-              rel="noopener noreferrer"
-              css={navbarStyles.contactOption}
-            >
-              <FaFacebook size={50} />
-            </a>
-            <select defaultValue={i18n.language} onChange={onLanguageChange}>
-              {languages.map(({ code, label }) => (
-                <option key={code} value={code}>
-                  {label}
-                </option>
-              ))}
-            </select>
+              icon={FaFacebook}
+            />
+            <LanguageSelector />
           </div>
         </div>
       </div>
@@ -103,21 +83,9 @@ const navbarStyles = createStyles({
       color: colors.linkHover,
     },
   }),
-  contactContent: {
+  contactAndLanguageContainer: {
     display: "flex",
     gap: "20px",
+    padding: "20px 0",
   },
-  contactOption: ({ colors }) => ({
-    color: colors.white,
-    textDecoration: "none",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: "4px",
-    padding: "20px 10px",
-    transition: "background-color 0.3s ease",
-    "&:hover": {
-      color: colors.linkHover,
-    },
-  }),
 });
