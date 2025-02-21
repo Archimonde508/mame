@@ -3,15 +3,15 @@ import { useTypedTranslation } from "../../hooks/useTypedTranslation/useTypedTra
 import { createStyles } from "../../theme/utils";
 import Image from "../../components/image/Image"
 
-const About = () => {
+const AboutPage = () => {
   const { t } = useTypedTranslation()
 
   return (
-    <div css={aboutStyles.container}>
-      <div css={aboutStyles.headerBar}>{t("aboutPageName")}</div>
-      <div css={aboutStyles.content}>
-        <Image src={aboutImage.src} alt="About Me" styles={aboutStyles.image} />
-        <div css={aboutStyles.textContainer}>
+    <div css={aboutPageStyles.container}>
+      <div css={aboutPageStyles.headerBar}>{t("aboutPageName")}</div>
+      <div css={aboutPageStyles.content}>
+        <Image src={aboutImage.src} alt="About Me" styles={aboutPageStyles.image} />
+        <div css={aboutPageStyles.textContainer}>
           {t("aboutText")}
           <p>
             {t("contactText")}
@@ -22,9 +22,9 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;
 
-const aboutStyles = createStyles({
+const aboutPageStyles = createStyles({
   container: {
     marginTop: "90px",
     display: "flex",

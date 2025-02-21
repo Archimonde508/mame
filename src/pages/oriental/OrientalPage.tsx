@@ -1,30 +1,30 @@
 import { createStyles } from "../../theme/utils";
 import YoutubePlayer from "../../components/youtube-player/YoutubePlayer";
 import ImageGallery from "../../components/image-gallery/ImageGallery";
-import { charismaImages } from "../../gallery/Images";
+import { orientalImages } from "../../gallery/Images";
 import { useTypedTranslation } from "../../hooks/useTypedTranslation/useTypedTranslation";
 
-const Charisma = () => {
+const OrientalPage = () => {
   const { t } = useTypedTranslation()
   return (
-    <div css={charismaStyles.container}>
-      <div css={charismaStyles.headerBar}>{t("modelPageName")}</div>
-      <div css={charismaStyles.content}>
-        <div css={charismaStyles.videosContainer}>
-          <YoutubePlayer src={"https://www.youtube.com/embed/dlwrdQscU6M"} />
-          <YoutubePlayer src={"https://www.youtube.com/embed/5eu_jRHHusg"} />
+    <div css={orientalPageStyles.container}>
+      <div css={orientalPageStyles.headerBar}>{t("orientPageName")}</div>
+      <div css={orientalPageStyles.content}>
+        <div css={orientalPageStyles.videosContainer}>
+          <YoutubePlayer src={"https://www.youtube.com/embed/qon4GfrfwFM"} />
+          <YoutubePlayer src={"https://www.youtube.com/embed/F0sqfPkCcyM"} />
         </div>
-        <div css={charismaStyles.galleryContainer}>
-          <ImageGallery images={charismaImages}/>
+        <div css={orientalPageStyles.galleryContainer}>
+          <ImageGallery images={orientalImages}/>
         </div>
       </div>
     </div>
   );
 };
 
-export default Charisma;
+export default OrientalPage;
 
-const charismaStyles = createStyles({
+const orientalPageStyles = createStyles({
   container: {
     display: "flex",
     flexDirection: "column",

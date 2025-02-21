@@ -177,21 +177,7 @@ NIE UZYWAC COLOR SHEME BO CIE ZMIECIE Z PLANSZY XD
 
 
 
-2a. Na waskiej wersji:
-   (la praca to chujowo wyglada):
-      1. Home
-      2. Aktorstwo
-      3. Orientalna
-      4. Charisma
-      5. About
-  Lapek mamy:
-    1. Home
-      2. Aktorstwo
-      3. Orientalna
-      4. Charisma
-      5. About
-2b. Aktorstwo chyba chujowo zrobione bo na wąskim ekranie jest w stanie wypchnąć navbara - dodałem padding-top i działa ale to takie se
-  
+1. Na wąskich monitorach (jak w pracy) chujowo to wygląda
 3. dodaj Pozostałe strony (5 min)
   4.1 Orient - wymiary stron
   4.2 Aktorstwo

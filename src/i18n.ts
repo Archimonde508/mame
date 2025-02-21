@@ -7,7 +7,7 @@ const resources: Record<string, { translation: TranslationKeys }> = {
         translation: {
             homeDescription: 'Aktorka / Modelka Dojrzała',
             homePageName: 'Strona główna',
-            actingPageName: 'Aktorstwo',
+            actressPageName: 'Aktorstwo',
             orientPageName: 'Uroda Orientalna',
             modelPageName: 'Modelka',
             aboutPageName: 'O mnie',
@@ -27,7 +27,7 @@ const resources: Record<string, { translation: TranslationKeys }> = {
         translation: {
             homeDescription: 'Actress / Mature Model',
             homePageName: 'Home',
-            actingPageName: 'Acting',
+            actressPageName: 'Actress',
             orientPageName: 'Oriental Beauty',
             modelPageName: 'Model',
             aboutPageName: 'About Me',

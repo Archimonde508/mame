@@ -2,24 +2,25 @@ import { GalleryImage, ImageBase } from "../types/Image";
 
 const isPrd = import.meta.env.VITE_IS_PRD === 'true';
 const baseUrl = `${isPrd ? '' : '/src'}/gallery`
-const arabianUrl = `${baseUrl}/arabian/`
-const orientalUrl = `${baseUrl}/orient/`
+const modelUrl = `${baseUrl}/model/`
+const orientalUrl = `${baseUrl}/oriental/`
+const actressUrl = `${baseUrl}/actress/`
 const aboutUrl = `${baseUrl}/about/`
 
 const aboutImage: ImageBase = {
   src: `${aboutUrl}about.jpg`,
 }
 
-const arabianImages: GalleryImage[] = [
+const orientalImages: GalleryImage[] = [
   {
-    src: `${arabianUrl}1 Moevir Magazine October Issue 202319.jpg`,
+    src: `${orientalUrl}1 Moevir Magazine October Issue 202319.jpg`,
     width: 524,
     height: 793,
     title: "1 Moevir Magazine October Issue 202319.jpg",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${arabianUrl}1 Moevir Magazine October Issue 202320.jpg`,
+    src: `${orientalUrl}1 Moevir Magazine October Issue 202320.jpg`,
     width: 524,
     height: 793,
     title: "1 Moevir Magazine October Issue 202320.jpg",
@@ -33,28 +34,28 @@ const arabianImages: GalleryImage[] = [
   //   description: "After Rain (Jeshu John - designerspics.com)",
   // },
   {
-    src: `${arabianUrl}Malgorzata Horyn-Olszewska 50 lat .JPG`,
+    src: `${orientalUrl}Malgorzata Horyn-Olszewska 50 lat .JPG`,
     width: 524,
     height: 793,
     title: "Malgorzata Horyn-Olszewska 50 lat .JPG",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${arabianUrl}Malgorzata Horyn-Olszewska 50 lat.jpg`,
+    src: `${orientalUrl}Malgorzata Horyn-Olszewska 50 lat.jpg`,
     width: 524,
     height: 793,
     title: "Malgorzata Horyn-Olszewska 50 lat.jpg",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${arabianUrl}Malgorzata Horyn-Olszewska PORTRET.jpg`,
+    src: `${orientalUrl}Malgorzata Horyn-Olszewska PORTRET.jpg`,
     width: 524,
     height: 793,
     title: "Malgorzata Horyn-Olszewska PORTRET.jpg",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${arabianUrl}Malgorzata Horyn-Olszewska w hidzabie.jpg`,
+    src: `${orientalUrl}Malgorzata Horyn-Olszewska w hidzabie.jpg`,
     width: 524,
     height: 793,
     title: "Malgorzata Horyn-Olszewska w hidzabie.jpg",
@@ -68,28 +69,28 @@ const arabianImages: GalleryImage[] = [
   //   description: "After Rain (Jeshu John - designerspics.com)",
   // },
   {
-    src: `${arabianUrl}Malgorzata Horyn-Olszewska.png`,
+    src: `${orientalUrl}Malgorzata Horyn-Olszewska.png`,
     width: 524,
     height: 793,
     title: "Malgorzata Horyn-Olszewska.png",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${arabianUrl}Malgorzata Horyn-Olszewska1CASTING STUDIO.jpg`,
+    src: `${orientalUrl}Malgorzata Horyn-Olszewska1CASTING STUDIO.jpg`,
     width: 524,
     height: 793,
     title: "Malgorzata Horyn-Olszewska1CASTING STUDIO.jpg",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${arabianUrl}Malgorzata Horyn-Olszewska3.png`,
+    src: `${orientalUrl}Malgorzata Horyn-Olszewska3.png`,
     width: 524,
     height: 793,
     title: "Malgorzata Horyn-Olszewska3.png",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${arabianUrl}Malgorzata. Horyn-Olszewska.jpg`,
+    src: `${orientalUrl}Malgorzata. Horyn-Olszewska.jpg`,
     width: 524,
     height: 793,
     title: "Malgorzata. Horyn-Olszewska.jpg",
@@ -98,37 +99,37 @@ const arabianImages: GalleryImage[] = [
 
 ]
 
-const charismaImages: GalleryImage[] = [
+const modelImages: GalleryImage[] = [
   {
-    src: `${orientalUrl}1.JPG`,
+    src: `${modelUrl}1.JPG`,
     width: 524,
     height: 793,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${orientalUrl}2.PNG`,
+    src: `${modelUrl}2.PNG`,
     width: 610,
     height: 920,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${orientalUrl}3.PNG`,
+    src: `${modelUrl}3.PNG`,
     width: 611,
     height: 920,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${orientalUrl}4.PNG`,
+    src: `${modelUrl}4.PNG`,
     width: 615,
     height: 919,
     title: "aaaaa",
     description: "After Rain (Jeshu John - designerspics.com)",
   },
   {
-    src: `${orientalUrl}5.PNG`,
+    src: `${modelUrl}5.PNG`,
     width: 602,
     height: 915,
     title: "aaaaa",
@@ -136,4 +137,15 @@ const charismaImages: GalleryImage[] = [
   }
 ];
 
-export { arabianImages, charismaImages, aboutImage };
+
+const actressImages: GalleryImage[] = [
+  {
+    src: `${actressUrl}1.JPG`,
+    width: 524,
+    height: 793,
+    title: "aaaaa",
+    description: "After Rain (Jeshu John - designerspics.com)",
+  }
+];
+
+export { actressImages, modelImages, orientalImages, aboutImage };

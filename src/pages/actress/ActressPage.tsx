@@ -1,17 +1,17 @@
 import { createStyles } from "../../theme/utils";
 
-const Actress = () => {
+const ActressPage = () => {
   
   return (
-    <div css={actressStyles.videoContainer}>
+    <div css={actressPageStyles.videoContainer}>
 
     </div>
   );
 };
 
-export default Actress;
+export default ActressPage;
 
-const actressStyles = createStyles({
+const actressPageStyles = createStyles({
   videoContainer: {
     width: "800px",
     height: "calc(800px * 9 / 16)",

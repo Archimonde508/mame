@@ -17,13 +17,13 @@ const Navbar = () => {
             <Link to="/" css={navbarStyles.navbarOption}>
               <li>{t("homePageName")}</li>
             </Link>
-            <Link to="/acting" css={navbarStyles.navbarOption}>
-              <li>{t("actingPageName")}</li>
+            <Link to="/actress" css={navbarStyles.navbarOption}>
+              <li>{t("actressPageName")}</li>
             </Link>
-            <Link to="/arabian" css={navbarStyles.navbarOption}>
+            <Link to="/oriental" css={navbarStyles.navbarOption}>
               <li>{t("orientPageName")}</li>
             </Link>
-            <Link to="/charisma" css={navbarStyles.navbarOption}>
+            <Link to="/model" css={navbarStyles.navbarOption}>
               <li>{t("modelPageName")}</li>
             </Link>
             <Link to="/about" css={navbarStyles.navbarOption}>

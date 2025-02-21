@@ -1,30 +1,30 @@
 import { createStyles } from "../../theme/utils";
 import YoutubePlayer from "../../components/youtube-player/YoutubePlayer";
 import ImageGallery from "../../components/image-gallery/ImageGallery";
-import { arabianImages } from "../../gallery/Images";
+import { modelImages } from "../../gallery/Images";
 import { useTypedTranslation } from "../../hooks/useTypedTranslation/useTypedTranslation";
 
-const Arabian = () => {
+const ModelPage = () => {
   const { t } = useTypedTranslation()
   return (
-    <div css={arabianStyles.container}>
-      <div css={arabianStyles.headerBar}>{t("orientPageName")}</div>
-      <div css={arabianStyles.content}>
-        <div css={arabianStyles.videosContainer}>
-          <YoutubePlayer src={"https://www.youtube.com/embed/qon4GfrfwFM"} />
-          <YoutubePlayer src={"https://www.youtube.com/embed/F0sqfPkCcyM"} />
+    <div css={modelPageStyles.container}>
+      <div css={modelPageStyles.headerBar}>{t("modelPageName")}</div>
+      <div css={modelPageStyles.content}>
+        <div css={modelPageStyles.videosContainer}>
+          <YoutubePlayer src={"https://www.youtube.com/embed/dlwrdQscU6M"} />
+          <YoutubePlayer src={"https://www.youtube.com/embed/5eu_jRHHusg"} />
         </div>
-        <div css={arabianStyles.galleryContainer}>
-          <ImageGallery images={arabianImages}/>
+        <div css={modelPageStyles.galleryContainer}>
+          <ImageGallery images={modelImages}/>
         </div>
       </div>
     </div>
   );
 };
 
-export default Arabian;
+export default ModelPage;
 
-const arabianStyles = createStyles({
+const modelPageStyles = createStyles({
   container: {
     display: "flex",
     flexDirection: "column",

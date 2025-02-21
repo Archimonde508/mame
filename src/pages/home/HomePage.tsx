@@ -3,7 +3,7 @@ import { createStyles } from "../../theme/utils";
 import { fadeInKeyframes } from "../../theme/keyframes";
 import { useTranslation } from "react-i18next";
 
-const Home = () => {
+const HomePage = () => {
   const [loaded, setLoaded] = useState(false);
   const { t } = useTranslation();
 
@@ -16,26 +16,26 @@ const Home = () => {
   return (
     <div
       css={[
-        homeStyles.home,
-        loaded ? homeStyles.homeLoaded : homeStyles.homeInitial,
+        homePageStyles.home,
+        loaded ? homePageStyles.homeLoaded : homePageStyles.homeInitial,
       ]}
     >
-      <div css={homeStyles.infoContainer}>
-        <div css={homeStyles.nameContainer}>
-          <div css={homeStyles.firstnameContainer}>
+      <div css={homePageStyles.infoContainer}>
+        <div css={homePageStyles.nameContainer}>
+          <div css={homePageStyles.firstnameContainer}>
             <div>Małgorzata </div>
           </div>
           <div className="surname-container">Horyń-Olszewska </div>
         </div>
-        <div css={homeStyles.careerContainer}>{t("homeDescription")}</div>
+        <div css={homePageStyles.careerContainer}>{t("homeDescription")}</div>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default HomePage;
 
-const homeStyles = createStyles({
+const homePageStyles = createStyles({
   home: ({ breakPoints, colors }) => ({
     position: "relative",
     backgroundColor: colors.black,

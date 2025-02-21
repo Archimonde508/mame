@@ -10,10 +10,10 @@ const YoutubePlayer = ({ src }: YoutubePlayerProps) => {
   const [loading, setLoading] = useState(true)
    
   return (
-    <div css={charismaStyles.videoContainer}>
+    <div css={orientalStyles.videoContainer}>
       {loading && <YoutubeLoader />}
       <iframe
-        css={charismaStyles.iframe}
+        css={orientalStyles.iframe}
         src={src}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -26,7 +26,7 @@ const YoutubePlayer = ({ src }: YoutubePlayerProps) => {
 
 export default YoutubePlayer;
 
-const charismaStyles = createStyles({
+const orientalStyles = createStyles({
   videoContainer: {
     width: "calc(33vh * 16 / 9)",
     height: "33vh",
