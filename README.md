@@ -7,6 +7,8 @@
 
 scp -P 10232 "C:\Users\Archimonde\Desktop\mama zdjeica\5.PNG" "C:\Users\Archimonde\Desktop\mama zdjeica\6.PNG" root@srv10.mikr.us:/var/www/gallery/
 scp -P 10232 -r root@srv10.mikr.us:/var/www/gallery/* "C:\Users\olspa\Desktop\mame\mame\src\gallery"
+scp -P 10232 -r "C:\Users\olspa\Desktop\mame\mame\src\gallery\*" root@srv10.mikr.us:/var/www/gallery/
+
 
 
 Najważniejsze:
@@ -260,4 +262,7 @@ da się to zrobić
 :: pseudo-elements - cześć elementu - before, after, first-letter, first-line
 
 
+dodatkowo trzeba na kazdy z PODFOLDERÓW dać tez uprawnienia do dostepu, ale to BYŁO WIDAĆ W KONSOLI 403
+
 W NOTATKACH CAŁEGO PIPELINE PRZEPISZ KROK PO KROKU
+

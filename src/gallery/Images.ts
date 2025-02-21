@@ -6,9 +6,8 @@ const arabianUrl = `${baseUrl}/arabian/`
 const orientalUrl = `${baseUrl}/orient/`
 const aboutUrl = `${baseUrl}/about/`
 
-
 const aboutImage: ImageBase = {
-  src: `${aboutUrl}about.JPG`,
+  src: `${aboutUrl}about.jpg`,
 }
 
 const arabianImages: GalleryImage[] = [
