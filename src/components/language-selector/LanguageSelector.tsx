@@ -14,20 +14,14 @@ const LanguageSelector = () => {
         css={languageSelectorStyles.languageOption}
         onClick={() => onLanguageChange("pl")}
       >
-        <Flag
-          code="PL"
-          style={{ width: "20px", height: "15px", marginRight: "8px" }}
-        />
+        <Flag code="PL" css={languageSelectorStyles.flag} />
         <span>PL</span>
       </div>
       <div
         css={languageSelectorStyles.languageOption}
         onClick={() => onLanguageChange("en")}
       >
-        <Flag
-          code="GB"
-          style={{ width: "20px", height: "15px", marginRight: "8px" }}
-        />
+        <Flag code="GB" css={languageSelectorStyles.flag} />
         <span>ENG</span>
       </div>
     </div>
@@ -56,4 +50,9 @@ const languageSelectorStyles = createStyles({
       backgroundColor: colors.linkHover,
     },
   }),
+  flag: {
+    width: "20px",
+    height: "15px",
+    marginRight: "8px",
+  },
 });

@@ -43,7 +43,7 @@ const charismaStyles = createStyles({
   }),
   content: {
     display: "grid",
-    gridTemplateColumns: "4fr 1fr 6fr",
+    gridTemplateColumns: "auto 1fr 5fr",
     gridTemplateAreas: `"videosContainer . galleryContainer"`,
   },
   videosContainer: {

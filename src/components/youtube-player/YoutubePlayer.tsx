@@ -28,8 +28,8 @@ export default YoutubePlayer;
 
 const charismaStyles = createStyles({
   videoContainer: {
-    width: "520px",
-    height: "calc(520px * 9 / 16)",
+    width: "calc(33vh * 16 / 9)",
+    height: "33vh",
     margin: "0 auto",
     position: "relative",
   },
