@@ -50,9 +50,9 @@ const aboutStyles = createStyles({
     gap: "5%",
     width: "100%",
   },
-  image: ({ breakPoints }) => ({
+  image: {
     width: "40vh",
-  }),
+  },
   textContainer: ({ typography }) => ({
     flex: "0 0 50%",
     maxWidth: "50%",

@@ -173,7 +173,7 @@ tak powinien wyglądać config
 
 NIE UZYWAC COLOR SHEME BO CIE ZMIECIE Z PLANSZY XD
 
-1 No ale tu też jest problem bo to zdjęcie musi mieć loadera!!! (20min)
+
 
 2a. Na waskiej wersji:
    (la praca to chujowo wyglada):
