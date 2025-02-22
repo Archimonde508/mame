@@ -42,6 +42,11 @@ Helpful commands:
     Check Firewall status:
     ufw status
 
+    Check permissions of given dir:
+    ls -ld nazwa_folderu
+
+    
+
 
 
 TODO: 
