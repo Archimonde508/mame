@@ -1,6 +1,7 @@
 export interface GalleryImage extends LightBoxImage {
-    width: number;
-    height: number;
+    thumbanilWidth: number;
+    thumbanilHeight: number;
+    thumbnailSrc: string;
 }
 
 export interface LightBoxImage extends ImageBase {

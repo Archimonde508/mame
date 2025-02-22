@@ -178,23 +178,13 @@ NIE UZYWAC COLOR SHEME BO CIE ZMIECIE Z PLANSZY XD
 
 
 1. Na wąskich monitorach (jak w pracy) chujowo to wygląda
-3. dodaj Pozostałe strony (5 min)
-  4.1 Orient - wymiary stron
-  4.2 Aktorstwo
-  5. Pokaż mamie jak się to wypełnia
-
-
-
-
-7. Dodaj Wersje mobilne (dlugo)
-
 8. ZMIEŃ PASY DO SERWERA
-  6. Navbar? Tak się go robi?
 9. FAVICON
 10. subdomena (to się tak w ogóle nazywa)
 11. Przetestuj wydajność
   wejście na urode orientalną blokuje stronę
     3.2 lazy loading dziala na tej galeri? Chuj wie jak to zrobić
+7. Dodaj Wersje mobilne (dlugo)
 1. Skontyneryzować w dockerku (1h)
 
 Mama:

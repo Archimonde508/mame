@@ -7,18 +7,18 @@ type YoutubePlayerProps = {
 };
 
 const YoutubePlayer = ({ src }: YoutubePlayerProps) => {
-  const [loading, setLoading] = useState(true)
-   
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div css={orientalStyles.videoContainer}>
-      {loading && <YoutubeLoader />}
+      {!loaded && <YoutubeLoader />}
       <iframe
         css={orientalStyles.iframe}
         src={src}
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        onLoad={() => setLoading(true)}
+        onLoad={() => setLoaded(true)}
       />
     </div>
   );

@@ -34,10 +34,20 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
     [images]
   );
 
+  const galleryImages = useMemo(
+    () =>
+      images.map((image) => ({
+        src: image.thumbnailSrc,
+        width: image.thumbanilWidth,
+        height: image.thumbanilHeight,
+      })),
+    [images]
+  );
+
   return (
     <>
       <Gallery
-        images={images}
+        images={galleryImages}
         onClick={(index) => handleClick(index)}
         enableImageSelection={false}
         rowHeight={250}
